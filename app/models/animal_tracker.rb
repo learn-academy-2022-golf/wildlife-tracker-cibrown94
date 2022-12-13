@@ -1,0 +1,3 @@
+class AnimalTracker < ApplicationRecord
+
+end
