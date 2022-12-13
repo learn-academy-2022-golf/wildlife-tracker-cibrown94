@@ -43,7 +43,3 @@ class SightingsController < ApplicationController
         params.require(:sighting).permit(:longitude, :date, :latitude, :animal_tracker_id)
       end
 end
-
-t.integer "animal_id"
-
-rails generate migration rename_column :sightings, :animal_id, :animal_tracker_id
