@@ -1,7 +1,7 @@
 class AnimalTrackersController < ApplicationController
     def index
         animals = AnimalTracker.all
-        render json: animals
+        render json: animals, include: [:sightings]
     end
 
     def show 
